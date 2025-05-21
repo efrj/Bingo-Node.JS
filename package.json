@@ -1,0 +1,18 @@
+{
+  "name": "bingo-game",
+  "version": "1.0.0",
+  "description": "Jogo de Bingo com NodeJS",
+  "main": "index.js",
+  "scripts": {
+    "start": "node index.js",
+    "dev": "nodemon index.js"
+  },
+  "keywords": [
+    "bingo",
+    "game",
+    "nodejs"
+  ],
+  "author": "",
+  "license": "MIT",
+  "dependencies": {}
+}

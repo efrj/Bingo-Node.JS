@@ -1,0 +1,542 @@
+/* Bingo Theme: Lime Green, Light Gray, and Gold Casino Glamour */
+/* General Body Style */
+body {
+    background-color: #e0e0e0;
+    background-image: url('https://www.transparenttextures.com/patterns/clean-gray-paper.png');
+    color: #333333;
+    font-family: 'Montserrat', sans-serif;
+    margin: 0;
+    padding: 20px;
+}
+
+.container {
+    background-color: rgba(240, 240, 240, 0.95);
+    border-radius: 15px;
+    box-shadow: 0 0 30px rgba(50, 205, 50, 0.4);
+    padding: 30px;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    position: relative;
+    border: 2px solid rgba(255, 215, 0, 0.7);
+    overflow: hidden;
+}
+
+.vegas-title-container {
+    position: relative;
+    padding: 0 0 25px 0;
+    margin-bottom: 40px;
+    overflow: hidden;
+    background: linear-gradient(to bottom, #cccccc, #e0e0e0);
+    border-radius: 12px;
+    box-shadow: 0 10px 25px rgba(0, 0, 0, 0.4);
+    border: 3px solid #ffd700;
+    text-align: center;
+}
+.luxury-header {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 0;
+    flex-wrap: wrap;
+}
+.wealth-image {
+    width: 120px;
+    height: 120px;
+    overflow: hidden;
+    margin: 10px 20px 10px 0;
+    position: relative;
+    border-radius: 50%;
+    border: 4px solid #32cd32;
+    box-shadow: 0 0 15px rgba(50, 205, 50, 0.5);
+}
+.wealth-image img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    object-position: center;
+    filter: saturate(1.2) contrast(1.1);
+}
+.title-area {
+    flex: 1;
+    padding: 20px 30px;
+    position: relative;
+    min-width: 250px;
+}
+.vegas-title {
+    font-size: 60px;
+    font-weight: 900;
+    letter-spacing: 10px;
+    margin: 0;
+    padding: 0;
+    position: relative;
+    z-index: 2;
+    text-shadow: 0 4px 15px rgba(0, 0, 0, 0.5);
+    color: #333333;
+}
+.vegas-dollar-sign {
+    color: #ffd700;
+    text-shadow: 0 0 15px rgba(255, 215, 0, 0.9), 0 0 25px rgba(255, 215, 0, 0.6);
+    vertical-align: middle;
+    font-size: 55px;
+    animation: gold-shine 3s infinite ease-in-out;
+}
+.vegas-text {
+    background: linear-gradient(to bottom, #333333 20%, #32cd32 60%, #008000 100%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+    text-fill-color: transparent;
+    display: inline-block;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 900;
+    filter: drop-shadow(0 3px 6px rgba(0,0,0,0.4));
+}
+.vegas-subtitle {
+    text-align: center;
+    font-size: 24px;
+    color: #555555;
+    margin-top: 8px;
+    letter-spacing: 6px;
+    text-shadow: 0 2px 8px rgba(0, 0, 0, 0.5);
+    position: relative;
+    z-index: 2;
+    font-weight: 700;
+    text-transform: uppercase;
+    animation: subtitle-glow 3s infinite alternate ease-in-out;
+}
+.gold-bar {
+    height: 10px;
+    background: linear-gradient(to right, #ffd700, #fffacd, #ffd700);
+    position: relative;
+    margin-top: 15px;
+    box-shadow: 0 3px 12px rgba(255, 215, 0, 0.6);
+    border-radius: 5px;
+}
+.gold-bar:before, .gold-bar:after {
+    content: '';
+    position: absolute;
+    width: 25px;
+    height: 25px;
+    background: #ffd700;
+    border-radius: 50%;
+    top: -7.5px;
+    border: 3px solid #333333;
+    box-shadow: 0 0 12px rgba(50, 205, 50, 0.9);
+}
+.gold-bar:before {
+    left: 15px;
+}
+.gold-bar:after {
+    right: 15px;
+}
+.vegas-lights {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    z-index: 1;
+    background: radial-gradient(circle at 15% 40%, rgba(50, 205, 50, 0.2) 0%, transparent 40%),
+                radial-gradient(circle at 85% 70%, rgba(255, 215, 0, 0.2) 0%, transparent 40%);
+    pointer-events: none;
+}
+@keyframes gold-shine {
+    0% { text-shadow: 0 0 10px rgba(255, 215, 0, 0.8); }
+    50% { text-shadow: 0 0 20px rgba(255, 215, 0, 1), 0 0 30px rgba(255, 215, 0, 0.7); }
+    100% { text-shadow: 0 0 10px rgba(255, 215, 0, 0.8); }
+}
+@keyframes subtitle-glow {
+    0% { opacity: 0.9; color: #555555; }
+    100% { opacity: 1; color: #32cd32; text-shadow: 0 0 10px rgba(50, 205, 50, 0.6); }
+}
+
+@media (max-width: 768px) {
+    .luxury-header {
+        flex-direction: column;
+        text-align: center;
+    }
+.wealth-image {
+    width: 100px;
+    height: 100px;
+    margin: 0 auto 15px auto;
+    border-right: none;
+    border-bottom: none;
+}
+
+.vegas-title {
+    font-size: 45px;
+    letter-spacing: 6px;
+}
+
+.vegas-subtitle {
+    font-size: 18px;
+    letter-spacing: 4px;
+}
+
+.title-area {
+    padding: 15px;
+    text-align: center;
+}
+
+}
+
+.bingo-card {
+    margin-bottom: 25px;
+    border: 4px solid #32cd32;
+    border-radius: 15px;
+    overflow: hidden;
+    position: relative;
+    background-color: #f8f8f8;
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.3), 0 0 20px rgba(50, 205, 50, 0.3);
+    transition: transform 0.4s ease-in-out, box-shadow 0.4s ease-in-out;
+}
+.bingo-card:hover {
+    transform: translateY(-8px) rotate(1deg);
+    box-shadow: 0 15px 30px rgba(0, 0, 0, 0.4), 0 0 25px rgba(50, 205, 50, 0.5);
+}
+.bingo-card table {
+    width: 100%;
+    margin-bottom: 0;
+    background-color: #ffffff;
+    border-collapse: collapse;
+}
+.bingo-card th {
+    background: linear-gradient(to bottom, #ffd700, #ffec8b);
+    color: #333333;
+    text-align: center;
+    font-weight: bold;
+    padding: 10px 5px;
+    border: 1px solid #cccccc;
+    font-size: 20px;
+    text-shadow: 0 1px 2px rgba(0, 0, 0, 0.1);
+    text-transform: uppercase;
+}
+.bingo-card td {
+    text-align: center;
+    font-weight: bold;
+    padding: 12px 5px;
+    font-size: 22px;
+    cursor: pointer;
+    transition: all 0.3s ease-in-out;
+    border: 1px solid #cccccc;
+    color: #333333;
+    position: relative;
+    background-color: #f0f0f0;
+}
+.bingo-card td:hover {
+    background-color: #e0e0e0;
+    transform: scale(1.05);
+    z-index: 1;
+}
+.bingo-card td.marked {
+    background: linear-gradient(135deg, #32cd32, #008000);
+    color: white;
+    box-shadow: inset 0 0 15px rgba(0, 0, 0, 0.4);
+    text-shadow: 0 1px 3px rgba(0, 0, 0, 0.3);
+}
+.bingo-card td.marked:after {
+    content: '';
+    position: absolute;
+    top: 5px;
+    right: 5px;
+    width: 10px;
+    height: 10px;
+    background-color: rgba(255, 255, 255, 0.8);
+    border-radius: 50%;
+    box-shadow: 0 0 8px rgba(255, 255, 255, 0.6);
+}
+.bingo-card td.free-space {
+    background: linear-gradient(135deg, #ffd700, #ffec8b);
+    color: #333333;
+    font-size: 26px;
+    text-shadow: 0 1px 3px rgba(0, 0, 0, 0.2);
+    font-style: italic;
+}
+
+.player-info {
+    padding: 12px 15px;
+    background: linear-gradient(to right, #f0f0f0, #e0e0e0);
+    border-bottom: 3px solid rgba(50, 205, 50, 0.6);
+    display: flex;
+    align-items: center;
+    border-top-left-radius: 8px;
+    border-top-right-radius: 8px;
+}
+.player-info i {
+    margin-right: 10px;
+    font-size: 20px;
+    color: #32cd32;
+    text-shadow: 0 0 8px rgba(50, 205, 50, 0.7);
+}
+.player-name {
+    font-weight: bold;
+    font-size: 18px;
+    color: #333333;
+    text-shadow: 0 1px 2px rgba(0, 0, 0, 0.2);
+}
+
+.drawn-numbers {
+    margin-bottom: 25px;
+    text-align: center;
+}
+.number-ball {
+    display: inline-block;
+    width: 45px;
+    height: 45px;
+    border-radius: 50%;
+    background: radial-gradient(circle at 30% 30%, #32cd32, #008000);
+    color: white;
+    font-weight: bold;
+    text-align: center;
+    line-height: 45px;
+    margin: 0 6px 10px 6px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3), 0 0 12px rgba(50, 205, 50, 0.4);
+    position: relative;
+    transition: transform 0.3s ease-in-out;
+    font-size: 20px;
+}
+.number-ball:hover {
+    transform: scale(1.15) rotate(5deg);
+}
+.number-ball:before {
+    content: '';
+    position: absolute;
+    top: 10px;
+    left: 10px;
+    width: 12px;
+    height: 12px;
+    background-color: rgba(255, 255, 255, 0.7);
+    border-radius: 50%;
+    box-shadow: 0 0 6px rgba(255, 255, 255, 0.6);
+}
+
+#winners-list {
+    max-height: 300px;
+    overflow-y: auto;
+    padding-right: 10px;
+}
+.list-group-item {
+    background-color: #f0f0f0;
+    border-color: #cccccc;
+    color: #333333;
+    transition: all 0.3s ease-in-out;
+    padding: 15px;
+    margin-bottom: 8px;
+    border-radius: 8px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+.list-group-item:hover {
+    background-color: #e0e0e0;
+    transform: translateX(8px);
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+.list-group-item i {
+    margin-right: 12px;
+    font-size: 22px;
+    color: #ffd700;
+    animation: trophy-shine 2s infinite ease-in-out;
+}
+@keyframes trophy-shine {
+    0% { text-shadow: 0 0 5px rgba(255, 215, 0, 0.6); }
+    50% { text-shadow: 0 0 18px rgba(255, 215, 0, 1), 0 0 25px rgba(255, 215, 0, 0.7); }
+    100% { text-shadow: 0 0 5px rgba(255, 215, 0, 0.6); }
+}
+
+.winner-badge {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%) rotate(-25deg);
+    background: linear-gradient(135deg, #ffd700, #ffec8b);
+    color: #333333;
+    font-size: 36px;
+    font-weight: bold;
+    padding: 20px 40px;
+    border-radius: 10px;
+    z-index: 10;
+    box-shadow: 0 0 25px rgba(255, 215, 0, 0.9);
+    text-shadow: 0 3px 6px rgba(0, 0, 0, 0.4);
+    border: 4px solid rgba(50, 205, 50, 0.9);
+    animation: winner-pulse 1.5s infinite ease-in-out;
+}
+@keyframes winner-pulse {
+    0% {
+        transform: translate(-50%, -50%) rotate(-25deg) scale(1);
+        box-shadow: 0 0 25px rgba(255, 215, 0, 0.9);
+    }
+    50% {
+        transform: translate(-50%, -50%) rotate(-25deg) scale(1.1);
+        box-shadow: 0 0 35px rgba(255, 215, 0, 1), 0 0 50px rgba(255, 215, 0, 0.6);
+    }
+    100% {
+        transform: translate(-50%, -50%) rotate(-25deg) scale(1);
+        box-shadow: 0 0 25px rgba(255, 215, 0, 0.9);
+    }
+}
+
+.card {
+    background-color: #f8f8f8;
+    border: 3px solid #32cd32;
+    border-radius: 12px;
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.2);
+    margin-bottom: 25px;
+    overflow: hidden;
+}
+.card-header {
+    background: linear-gradient(to right, #32cd32, #008000);
+    color: white;
+    font-weight: bold;
+    border-bottom: none;
+    padding: 15px 20px;
+    font-size: 20px;
+    text-shadow: 0 1px 3px rgba(0, 0, 0, 0.3);
+}
+.card-body {
+    padding: 25px;
+}
+
+.btn-primary {
+    background: linear-gradient(to bottom, #ffd700, #ffec8b);
+    border-color: #ccac00;
+    color: #333333;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    font-weight: bold;
+    transition: all 0.3s ease-in-out;
+    margin-right: 15px;
+    padding: 10px 20px;
+    font-size: 18px;
+    border-radius: 8px;
+}
+.btn-primary:hover {
+    background: linear-gradient(to bottom, #ffec8b, #ffd700);
+    border-color: #ccac00;
+    transform: translateY(-3px);
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.3);
+}
+.btn-danger {
+    background: linear-gradient(to bottom, #dc3545, #bd2130);
+    border-color: #c82333;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    font-weight: bold;
+    transition: all 0.3s ease-in-out;
+    padding: 10px 20px;
+    font-size: 18px;
+    border-radius: 8px;
+}
+.btn-danger:hover {
+    background: linear-gradient(to bottom, #c82333, #a71d2a);
+    transform: translateY(-3px);
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.3);
+}
+
+#winnerModal .modal-content {
+    background-color: #ffffff;
+    border: 4px solid #32cd32;
+    border-radius: 20px;
+    overflow: hidden;
+    box-shadow: 0 0 40px rgba(50, 205, 50, 0.6);
+}
+#winnerModal .modal-header {
+background: linear-gradient(to right, #32cd32, #008000);
+color: white;
+border-bottom: none;
+text-align: center;
+padding: 20px;
+
+}
+#winnerModal .modal-title {
+font-weight: bold;
+width: 100%;
+text-align: center;
+font-size: 32px;
+text-shadow: 0 2px 4px rgba(0, 0, 0, 0.4);
+
+}
+#winnerModal .modal-body {
+background-image: url('https://www.transparenttextures.com/patterns/carbon-fibre.png');
+padding: 40px;
+color: #333333;
+text-align: center;
+font-size: 18px;
+
+}
+#winnerModal .fas.fa-trophy {
+color: #ffd700;
+font-size: 60px;
+margin-bottom: 20px;
+animation: winner-trophy 3s infinite ease-in-out;
+}
+@keyframes winner-trophy {
+    0% { transform: scale(1) rotate(0deg); text-shadow: 0 0 15px rgba(255, 215, 0, 0.8); }
+    50% { transform: scale(1.1) rotate(5deg); text-shadow: 0 0 25px rgba(255, 215, 0, 1), 0 0 50px rgba(255, 215, 0, 0.6); }
+    100% { transform: scale(1) rotate(0deg); text-shadow: 0 0 15px rgba(255, 215, 0, 0.8); }
+}
+#winnerModal .modal-footer {
+    border-top: none;
+    background-color: #ffffff;
+    padding: 15px;
+    justify-content: center;
+}
+#winnerModal .btn-secondary {
+    background: linear-gradient(to bottom, #cccccc, #999999);
+    border: none;
+    font-weight: bold;
+    padding: 10px 25px;
+    box-shadow: 0 3px 6px rgba(0, 0, 0, 0.2);
+    transition: all 0.3s ease-in-out;
+    font-size: 18px;
+    border-radius: 8px;
+    color: #333333;
+}
+#winnerModal .btn-secondary:hover {
+background: linear-gradient(to bottom, #bbbbbb, #888888);
+transform: translateY(-2px);
+box-shadow: 0 5px 10px rgba(0, 0, 0, 0.3);
+
+}
+
+.container:before, .container:after {
+    content: '';
+    position: absolute;
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    opacity: 0.8;
+    z-index: -1;
+    filter: drop-shadow(0 5px 10px rgba(0,0,0,0.3));
+}
+.container:before {
+    top: -30px;
+    left: -30px;
+    background: linear-gradient(135deg, #cccccc, #999999);
+    border: 8px dashed #ffd700;
+    transform: rotate(20deg);
+}
+.container:after {
+    bottom: -30px;
+    right: -30px;
+    background: linear-gradient(135deg, #ffd700, #ccac00);
+    border: 8px dashed #cccccc;
+    transform: rotate(-20deg);
+}
+
+@keyframes floating {
+    0% { transform: translateY(0px) rotate(0deg); }
+    50% { transform: translateY(-15px) rotate(5deg); }
+    100% { transform: translateY(0px) rotate(0deg); }
+}
+
+#winners-list::-webkit-scrollbar {
+    width: 10px;
+}
+#winners-list::-webkit-scrollbar-track {
+    background: #f1f1f1;
+    border-radius: 5px;
+}
+#winners-list::-webkit-scrollbar-thumb {
+    background: linear-gradient(to bottom, #32cd32, #008000);
+    border-radius: 5px;
+}
+#winners-list::-webkit-scrollbar-thumb:hover {
+    background: linear-gradient(to bottom, #008000, #32cd32);
+}
